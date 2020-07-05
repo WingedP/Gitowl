@@ -1,0 +1,45 @@
+
+
+
+:root {
+    --guidegradient: linear-gradient(45deg, #9ad6cc, rgb(122, 202, 189), #cdf7d1);
+
+  }
+
+
+
+
+.post-comment-style{
+/* background: #000; */
+display: flex;
+align-items: center;
+}
+
+.post-comment-form{
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+
+}
+@keyframes btn-animation {
+    0% {background-position: left}
+    50% {background-position: right}
+  }
+
+.post-comment-btn:hover{
+    cursor: pointer;
+    animation: btn-animation 1s infinite  alternate;
+
+}
+.post-comment-btn{
+    color: rgb(17, 17, 17);
+    font-weight: bold;
+    font-size: 1rem;
+    /* text-shadow: 1px 1px #000000; */
+    border: .6px solid gray;
+    border-radius: 5px;
+    height: 2.4rem;
+      background-image: var(--guidegradient);
+      background-size: 300%;
+
+
+}

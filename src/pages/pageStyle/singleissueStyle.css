@@ -1,0 +1,87 @@
+
+
+
+@media only screen and (max-width: 380px) {
+    .single-issue-style{
+        /* background: red; */
+        height: 100vh;
+        overflow: hidden;
+    }
+    .single-issue-detailz{
+        /* background: red; */
+        overflow-x: hidden;
+    }
+    .single-issue-title1{
+ font-weight: bold;
+    }
+    .single-issue-title{
+        padding-top: 2rem;
+        font-size: 1rem !important;
+    }
+    .single-issue-state{
+        font-size: 1.2rem !important;
+        display: flex;
+        align-items: center;
+
+    }
+    .labelrender{
+        padding-top: 0.3rem;
+    }
+        
+      }
+
+.labelrender{padding-left: 1rem;
+padding-bottom: .4rem;}
+
+.single-issue-title{
+    font-size: 1.6rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border: .6px solid rgb(197, 196, 196);
+    background: #EFEFBB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #D4D3DD, #EFEFBB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.single-issue-number{
+    color: gray;    font-size: 1.5rem;
+    margin-right: 2rem;
+
+}
+
+
+.label-name{
+    font-size: 16px;
+    border: .6px solid gray;
+    border-radius: 5px;
+    padding: .4rem;
+}
+.issues-comment{
+    background: rgb(235, 226, 226);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    border: .6px solid rgb(197, 196, 196);
+
+}
+
+.single-issue-state{
+    font-size: 1.5rem;
+    margin-right: 2rem;
+}
+
+.single-issue-detailz{
+    display: flex;   
+    align-items: center; 
+    border-bottom: 1px solid gray;
+margin-bottom: 1rem;
+height: 5rem;
+padding: .5rem;
+
+}
+
+.render-all-comments{
+    margin: 2rem;
+}
+

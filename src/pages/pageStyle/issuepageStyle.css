@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@500&display=swap');
+
+
+
+.btn-repo-detail{
+    margin-right: 1.2rem;
+    /* margin-left: 1rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.issue-list{
+    background: rgb(240, 236, 236);
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    padding: .5rem;
+    -webkit-box-shadow: 0px -1px 5px 3px rgba(133,133,133,1);
+-moz-box-shadow: 0px -1px 5px 3px rgba(133,133,133,1);
+box-shadow: 0px -1px 5px 3px rgba(133,133,133,1);
+
+}
+.issuepage-icon-style{padding-right: .5rem;}
+.issue-title{
+    font-size: 1.3rem;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    color: black;
+    transition: .3s ease;
+}
+
+.issue-headline:hover{
+    background: rgb(236, 226, 211);
+    transition: .3s ease;
+    -webkit-box-shadow: 0px 1px 2px 2px rgba(117,117,117,1);
+    -moz-box-shadow: 0px 1px 2px 2px rgba(117,117,117,1);
+    box-shadow: 0px 1px 2px 2px rgba(117,117,117,1);
+    
+}
+.issues-user-detail{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: transparent;
+}
+.create-update{
+    padding-right: 3rem;
+    font-size: .8rem;
+    color: rgb(102, 102, 102);
+}
+
+.issues-labels-wrapper{
+    padding-top: .5rem;
+    padding-left: .5rem;
+    display: flex;
+}
+.issue-headline{
+    display: flex;
+    border-radius: 5px;
+    
+    padding: .5rem 1rem .5rem 1rem;
+    margin-bottom: .5rem;
+    justify-content: space-between;
+    background-color: rgb(219, 212, 212);
+}
+.issue-headline2{
+    text-decoration: none;
+
+    display: flex;
+    
+    align-items: center;
+    width: 100%;
+
+}
+.issue-comments{
+display: flex;
+align-items: center;
+    font-size: 1.3rem;
+    padding-right: 4rem;
+}
+.issues-labels{
+    -webkit-box-shadow: 0px 1px 2px 2px rgba(117,117,117,1);
+    -moz-box-shadow: 0px 1px 2px 2px rgba(117,117,117,1);
+    box-shadow: 0px 1px 2px 2px rgba(117,117,117,1);
+    width: fit-content;
+    margin-right: 2rem;
+    padding-left: 0.3rem;
+    padding-right: .3rem;
+}
+
+
+
+.issuepage-header{
+    /* background: linear-gradient(to right, #67b26f, #4ca2cd);  */
+    position: relative;
+    padding-left: 1.4rem;
+    background: #EFEFBB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #D4D3DD, #EFEFBB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+.issuepage-headerbox{
+    position: absolute;
+    z-index: -1;
+    left: -40%;
+    bottom: 0;
+    /* height: 100%;
+    width: 100%; */
+
+}
+.issuepage-repocount{
+    display: flex;
+    padding-bottom: .7rem;
+}
+.issuepage-tab{
+    background: hotpink;
+    border: none;
+
+
+}
+
+
+.fullname-issuepage{
+    /* padding-left: 2rem; */
+    font-size: 3rem;
+    display: flex;
+    /* justify-content: center; */
+}
+
+
+.user-avatar{
+    width: 3.3rem;
+    border-radius: 50%;
+    margin-right: .5rem;
+}
+
+.decor-fullname{
+    /* position: absolute; */
+    margin-right: 1.8rem;
+    top: .4rem;
+    left: 2.5rem;
+    width: 2rem;
+    height: 3rem;
+    background: #3494E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    clip-path: polygon(51% 0, 100% 0%, 75% 100%, 22% 100%);
+}
+
+.decor-fullname2{
+    position: absolute;
+    top: .5rem;
+    left: 2.7rem;
+    width: 2rem;
+    height: 3rem;
+    background: #3494E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    clip-path: polygon(51% 0, 100% 0%, 75% 100%, 22% 100%);
+}
+
+
+
+@media only screen and (max-width: 380px) {
+.issuepage-style{overflow-x: hidden;}
+.fullname-issuepage{
+    font-size: 2.4rem;
+    padding-bottom: 1rem;   
+}
+.issue-title{
+    font-size: .8rem;
+
+}
+.issue-comments{
+    padding-right: .3rem;
+}
+.fa-comment-alt{
+    padding-right: .2rem !important;
+
+}
+    
+}

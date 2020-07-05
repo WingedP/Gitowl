@@ -1,0 +1,52 @@
+:root {
+    --addissuegradient: linear-gradient(90deg, #9af19e, rgb(173, 236, 226), #ee6352);
+
+  }
+
+
+
+.post-issue-form{
+    border: 1px solid rgb(214, 207, 207);
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-left: 1.7rem;
+    padding-bottom: 1rem;
+
+}
+
+.add-issue-btn{
+    border: none;
+    border-radius: 5px;
+    background-image: var(--addissuegradient);
+    background-size: 400%;
+    margin-top: 1rem;
+    /* margin-left: 1rem; */
+    margin-bottom: 1rem;
+    padding: .4rem;
+    border: .7px solid gray;
+}
+
+.add-issue-btn:hover{
+        animation: button-animation 1s infinite  alternate;
+
+}
+
+@keyframes button-animation {
+    0% {background-position: left}
+    50% {background-position: right}
+  }
+.submitbtn{
+    display: flex;
+    margin-top: 1rem;
+    margin-right: 3.4rem;
+    justify-content: space-between;
+}
+.form-control-title{
+    width: 90%;
+}
+.form-control-content{
+    width: 90%;
+
+}

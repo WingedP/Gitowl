@@ -1,0 +1,268 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ravi+Prakash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+
+
+:root {
+    --guidegradient: linear-gradient(90deg, #ee6352, purple, #ee6352);
+    --guidegradient2: linear-gradient(14deg, rgba(244,70,140,1) 1%, rgba(143,99,61,1) 9%, rgba(62,184,180,1) 27%, rgba(90,167,70,1) 44%, rgba(171,129,69,1) 64%, rgba(180,65,94,1) 84%, rgba(237,114,38,1) 100%);
+    --repopage-gradient:  linear-gradient(90deg, #ee6352, purple, #ee6352);
+    --icongradient: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+--icongradient2:   linear-gradient(to right, #ba5370, #f4e2d8); 
+  }
+
+
+  @media only screen and (max-width: 380px) {
+      .guidingowl{
+          width: 70%;
+          margin-left: 3.4rem;
+          
+          /* background: gray; */          
+      }
+    .introduction{
+display: flex;
+flex-direction: column-reverse;
+    }
+    .guide-img-repo-wrapper{
+      width:6rem !important;
+      height: 5rem !important;
+      }
+      .guide-img-repo{
+    width: 5rem !important;
+    position: absolute ;
+    left: 0rem !important;
+        top: 0.5rem !important;
+  }
+    .guide-img-issue{
+        width: 10rem !important;
+        position: absolute ;
+        left: -2.8rem !important;
+    
+    }
+
+}
+
+
+.introduction{
+    margin-top: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    /* background-color: hotpink; */
+    display: flex;
+    justify-content: center;
+    background-size: 300%;
+    transition: background-position 1s;
+}
+@keyframes brandname-animation {
+    0% {background-position: left}
+    50% {background-position: right}
+    /* 100% {background-position: left} */
+  }
+
+.guide-brandname{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.6rem;
+    background-image: var(--guidegradient2);
+    background-clip: text;
+    background-size: 400%;
+    color: transparent;
+    animation: brandname-animation 12s infinite  alternate;
+
+}
+
+
+
+
+.owltalk{
+    /* background-color: rgb(192, 177, 37); */
+}
+.guidingowl{
+    /* background: grey; */
+    /* clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0); */
+    /* clip-path: polygon(49% 29%, 64% 36%, 83% 40%, 100% 27%, 100% 100%, 0 100%, 0 27%, 18% 40%, 35% 31%); */
+}
+
+
+.guide-intro{
+    font-size: 3rem;
+    border: 0.6rem solid rgb(214, 181, 214);
+    padding-left: 1.2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: white;
+}
+
+.guide-intro2{
+    font-family: 'Graduate', cursive;
+
+}
+
+
+
+@keyframes icon-animation {
+    0% {background-position: left}
+    50% {background-position: right}
+    /* 100% {background-position: left} */
+  }
+.guide-img-repo-wrapper{
+    width: 14rem;
+    height: 14rem;
+    overflow: hidden;
+    border-radius: 50%;
+
+    margin-right: 0.5rem;
+    }
+.iconanim1{    
+    background-image: var(--icongradient2);
+    background-size: 400%;    position: relative;
+    box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+    animation: icon-animation 12s infinite  alternate;}
+.iconanim2{    background-image: var(--icongradient);
+    background-size: 400%;    position: relative;
+    box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.75);
+    animation: icon-animation 12s infinite  alternate;}
+.guide-img-repo{
+    
+    /* background: indigo; */
+}
+.guide-img-issue{
+    width: 30rem;
+    position: absolute;
+    left: -8.7rem;
+    /* background: indigo; */
+
+}
+
+
+.action-view{
+  position: absolute;
+  background-image: var(--guidegradient);
+  height: 0.3rem;
+  width: 1rem;
+  top: 1.8rem;
+  left: 0.3rem;
+  z-index: -1;  transition: .3s;
+
+}
+.something:hover .action-view{
+  height: 0.3rem;
+  width: 10rem;
+  transition: .3s;
+}
+
+.something{
+    font-family: 'Press Start 2P', cursive;
+    position: relative;
+  padding-bottom: 5px;
+}
+.actionView{
+/* background: gold; */
+display: flex;
+align-items: center;
+margin-bottom: 1rem;
+}
+.actionAdd{
+/* background: indianred; */
+display: flex;
+align-items: center;
+}
+.textwrapper{
+    width: 20rem;
+    font-size: 2rem;
+}
+
+
+/* Right triangle placed top right flush. */
+.tri-right.border.right-top:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -40px;
+  top: -8px;
+	bottom: auto;
+	border: 32px solid;
+	border-color: rgb(178, 131, 192) transparent transparent transparent;
+}
+.tri-right.right-top:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -20px;
+  top: 0px;
+	bottom: auto;
+	border: 20px solid;
+	border-color: lightyellow transparent transparent transparent;
+}
+
+.example-names{
+/* font-size: 14px !important; */
+font-weight: bold;
+letter-spacing: -1.4px;
+margin-right: .5rem;
+}
+
+
+/* talk bubble contents */
+.talktext{
+  padding: 1em;
+  font-size: 1.2rem;
+	text-align: left;
+  line-height: 1.5em;
+  position: relative;
+}
+.talktext{
+  /* remove webkit p margins */
+  font-family: 'Graduate', cursive;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+
+}
+.talk-bubble {
+  display: inline-block;    
+  position: absolute;
+right: 26rem;
+top: 9rem;
+	width: 400px;
+	height: auto;
+	background-color: lightyellow;
+}
+.border{
+    border: 8px solid rgb(178, 131, 192);
+  }
+  /* .round{
+    border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+  
+  } */
+
+  /*Right triangle, placed bottom right side slightly in*/
+.tri-right.border.btm-right-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: 30px;
+	bottom: -40px;
+	border: 20px solid;
+	border-color: rgb(178, 131, 192) rgb(178, 131, 192) transparent transparent;
+}
+.tri-right.btm-right-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: 38px;
+	bottom: -20px;
+	border: 12px solid;
+	border-color: lightyellow lightyellow transparent transparent;
+}
+

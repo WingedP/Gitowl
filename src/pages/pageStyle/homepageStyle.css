@@ -1,0 +1,48 @@
+
+
+/* :root {
+    --homepageStyleGradient: linear-gradient(to right, #000000, #faf9ea);
+
+  } */
+
+
+.homepagestyle{
+    padding-bottom: 1rem;
+    /* background-image: var(--homepageStyleGradient);
+    background-size: 400%;    
+    animation: homepage-animation 12s infinite  alternate; */
+}
+.examplehome{
+    padding-left: 1rem;
+}
+@media only screen and (min-width: 850px) {
+    .examplehome{
+display: none;}
+
+    
+}
+
+@media only screen and (max-width: 380px) {
+    .homepagestyle{
+        /* width: 100% !important; */
+        /* background: gold; */
+padding-bottom: 10rem;
+    }
+    .home-boxstyle{
+        top: 12rem !important;
+        height: 15rem !important;
+    }
+    
+}
+
+
+.home-boxstyle{
+    position: absolute;
+    z-index: -1 !important; 
+    top: 6rem;
+    width: 100%;
+    height: 25rem;
+    background: linear-gradient(to right, #f0c27b, #4b1248); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 30%);
+
+}
