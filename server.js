@@ -19,7 +19,8 @@ http.createServer((req, res) => {
     }, (err, r, body) => {
       res.writeHead(301, {
         // 'Location': 'http://localhost:3000?' + body
-        'Location': 'https://gitowl.glitch.me?' + body
+        // 'Location': 'https://gitowl.glitch.me?' + body
+        'Location': 'https://gitowl.netlify.app?' + body
       });
       res.end();
     })
