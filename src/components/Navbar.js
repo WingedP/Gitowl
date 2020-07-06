@@ -75,7 +75,7 @@ function NavItem(props){
 function NavItemHome(props){
   return(
   <li className="nav-item">
-  <a href="http://localhost:3000/" className="icon-button">{props.icon}</a>
+  <a href="https://gitowl.netlify.app" className="icon-button">{props.icon}</a>
   </li>
 )}
 function DropdownMenu(props){
