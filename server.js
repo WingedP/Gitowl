@@ -4,8 +4,8 @@ require('dotenv').config();
 
 const clientId = process.env.REACT_APP_CLIENT_ID;
 const secretKey = process.env.REACT_APP_CLIENT_KEY; 
-
-console.log('started server on port 5002');
+const port = process.env.PORT || 5002;
+console.log(`started server on port ${port}`);
 
 http.createServer((req, res) => {
   var code = req.url.split("=")[1];
@@ -19,8 +19,8 @@ http.createServer((req, res) => {
     }, (err, r, body) => {
       res.writeHead(301, {
         // 'Location': 'http://localhost:3000?' + body
-        // 'Location': 'https://gitowl.glitch.me?' + body
-        'Location': 'https://gitowl.netlify.app?' + body
+        'Location': 'https://gitowl.glitch.me?' + body
+        // 'Location': 'https://gitowl.netlify.app?' + body
       });
       res.end();
     })
@@ -29,4 +29,4 @@ http.createServer((req, res) => {
     res.writeHead(404);
     res.end();
   }
-}).listen(5002);
+}).listen(port);
